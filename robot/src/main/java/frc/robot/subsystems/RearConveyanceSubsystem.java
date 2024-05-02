@@ -10,29 +10,29 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.RobotMap;
 import com.ctre.phoenix6.hardware.TalonFX;
 
-public class FrontConveyanceSubsystem extends SubsystemBase {
+public class RearConveyanceSubsystem extends SubsystemBase {
   /** Creates a new Conveyance1Subsystem. */
-  private TalonFX _frontConveyanceMotor = new TalonFX(RobotMap.FRONT_CONVEYANCE_MOTOR);
-  public FrontConveyanceSubsystem() {}
+  private TalonFX _rearConveyanceMotor = new TalonFX(RobotMap.REAR_CONVEYANCE_MOTOR);
+  public RearConveyanceSubsystem() {}
 
-  public void setFrontConveyancePower(double power){
-    _frontConveyanceMotor.set(power);
+  public void setRearConveyancePower(double power){
+    _rearConveyanceMotor.set(power);
   }
 
   public Command getRunForwardCommand(){
-    return this.startEnd(()-> setFrontConveyancePower(.5), ()-> stopFrontConveyance());
+    return this.startEnd(()-> setRearConveyancePower(.5), ()-> stopRearConveyance());
   }
 
   public Command getRunReverseCommand(){
-    return this.startEnd(()-> setFrontConveyancePower(-0.5), ()-> stopFrontConveyance());
+    return this.startEnd(()-> setRearConveyancePower(-0.5), ()-> stopRearConveyance());
   }
 
   public Command getStopCommand(){
-    return new InstantCommand(()-> stopFrontConveyance());
+    return new InstantCommand(()-> stopRearConveyance());
   }
 
-  public void stopFrontConveyance(){
-    _frontConveyanceMotor.set(0);
+  public void stopRearConveyance(){
+    _rearConveyanceMotor.set(0);
   }
 
   @Override

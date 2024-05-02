@@ -8,7 +8,7 @@ public final class RobotMap {
 
     //FEEDER
     public static final int FEEDER_MOTOR = 43;
-    public static final int FEEDER_CONVEYANCE_MOTOR = 42;
+    public static final int REAR_CONVEYANCE_MOTOR = 42;
 
     //CONVEYANCE
     public static final int FRONT_CONVEYANCE_MOTOR = 41;
@@ -33,8 +33,8 @@ public final class RobotMap {
     public static final int TURRET_COUNTER_CLOCKWISE_LIMIT_DIO_CHANNEL = 4;
 
     //INTAKE 
-    public static final int INTAKE_EXTEND_SOLENOID = 0;
-    public static final int INTAKE_RETRACT_SOLENOID = 1;
+    public static final int INTAKE_MOTOR = 0;
+    public static final int INTAKE_DEPLOY_MOTOR = 1;
     // public static final int INTAKE_EXTEND_RIGHT_SOLENOID = 2;
     // public static final int INTAKE_RETRACT_RIGHT_SOLENOID = 3; 
     
