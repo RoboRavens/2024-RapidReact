@@ -37,12 +37,8 @@ public class Robot extends TimedRobot {
     // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
-<<<<<<< HEAD
     /* 
     _driveController.a().whileTrue(_frontConveyanceSubsystem.getRunForwardCommand());
-=======
-    //_driveController.a().whileTrue(_frontConveyanceSubsystem.getRunForwardCommand());
->>>>>>> 19ec3a89bb5f1dd4da30b8d7e9851503a83963b9
     _driveController.b().whileTrue(_frontConveyanceSubsystem.getRunReverseCommand());
     _driveController.x().onTrue(_frontConveyanceSubsystem.getStopCommand());
     _driveController.rightTrigger().onTrue(_IntakeSubsystem.getIntakeCommand());
