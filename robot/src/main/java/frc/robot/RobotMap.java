@@ -6,6 +6,9 @@ package frc.robot;
 
 public final class RobotMap {
 
+    //CONTROLLERS
+    public static final int DRIVE_CONTROLLER_PORT = 0;
+
     //FEEDER
     public static final int FEEDER_MOTOR = 43;
     public static final int REAR_CONVEYANCE_MOTOR = 42;
