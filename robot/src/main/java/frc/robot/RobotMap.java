@@ -74,4 +74,7 @@ public final class RobotMap {
     
     //LIMELIGHT
     public static final String CAMERA_NAME = "cam0";
+
+    //PORTS
+    public static final int DRIVE_CONTROLLER_PORT = 0;
 }

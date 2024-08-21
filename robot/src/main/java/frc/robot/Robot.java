@@ -20,7 +20,7 @@ import frc.robot.subsystems.IntakeSubsystem;
 public class Robot extends TimedRobot {
   private Command m_autonomousCommand;
   CommandXboxController _driveController = new CommandXboxController(0);
-  FrontConveyanceSubsystem _frontConveyanceSubsystem = new FrontConveyanceSubsystem();
+  public static FrontConveyanceSubsystem _frontConveyanceSubsystem = new FrontConveyanceSubsystem();
   IntakeSubsystem _IntakeSubsystem = new IntakeSubsystem();
 
   private RobotContainer m_robotContainer;
@@ -34,10 +34,12 @@ public class Robot extends TimedRobot {
     // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
+    /* 
     _driveController.a().whileTrue(_frontConveyanceSubsystem.getRunForwardCommand());
     _driveController.b().whileTrue(_frontConveyanceSubsystem.getRunReverseCommand());
     _driveController.x().onTrue(_frontConveyanceSubsystem.getStopCommand());
     _driveController.rightTrigger().onTrue(_IntakeSubsystem.getIntakeCommand());
+    */
   }
 
   /**
