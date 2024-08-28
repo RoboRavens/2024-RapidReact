@@ -12,11 +12,11 @@ import com.ctre.phoenix6.hardware.TalonFX;
 
 public class RearConveyanceSubsystem extends SubsystemBase {
   /** Creates a new Conveyance1Subsystem. */
-  private TalonFX _rearConveyanceMotor = new TalonFX(RobotMap.REAR_CONVEYANCE_MOTOR);
+  //private TalonFX _rearConveyanceMotor = new TalonFX(RobotMap.REAR_CONVEYANCE_MOTOR);
   public RearConveyanceSubsystem() {}
 
   public void setRearConveyancePower(double power){
-    _rearConveyanceMotor.set(power);
+    //_rearConveyanceMotor.set(power);
   }
 
   public Command getRunForwardCommand(){
@@ -32,7 +32,7 @@ public class RearConveyanceSubsystem extends SubsystemBase {
   }
 
   public void stopRearConveyance(){
-    _rearConveyanceMotor.set(0);
+   // _rearConveyanceMotor.set(0);
   }
 
   @Override

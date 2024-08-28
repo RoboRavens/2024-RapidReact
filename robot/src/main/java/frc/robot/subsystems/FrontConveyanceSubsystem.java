@@ -28,7 +28,7 @@ public class FrontConveyanceSubsystem extends SubsystemBase {
   }
 
   public Command getStopCommand(){
-    return new InstantCommand(()-> stopFrontConveyance());
+    return this.run(()-> stopFrontConveyance());
   }
 
   public void stopFrontConveyance(){

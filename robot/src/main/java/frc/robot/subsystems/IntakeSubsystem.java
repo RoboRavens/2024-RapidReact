@@ -13,11 +13,11 @@ import frc.robot.RobotMap;
 
 public class IntakeSubsystem extends SubsystemBase {
   /** Creates a new IntakeSubsystem. */
-  private TalonFX _intakeMotor = new TalonFX(RobotMap.INTAKE_MOTOR);
+  //private TalonFX _intakeMotor = new TalonFX(RobotMap.INTAKE_MOTOR);
   public IntakeSubsystem() {}
 
   public void setIntakeSpeed(double speed){
-    _intakeMotor.set(speed);
+    //_intakeMotor.set(speed);
   }
 
   public void stopIntake(){

@@ -15,13 +15,13 @@ import frc.robot.RobotMap;
 
 public class IntakeDeploySubsystem extends SubsystemBase {
   /** Creates a new IntakeSubsystem. */
-  private TalonFX _intakeDeployMotor = new TalonFX(RobotMap.INTAKE_DEPLOY_MOTOR);
+  //private TalonFX _intakeDeployMotor = new TalonFX(RobotMap.INTAKE_DEPLOY_MOTOR);
   private double targetPosition = 0;
 
   public IntakeDeploySubsystem() {}
 
   public void goToPosition(double setpoint) {
-    _intakeDeployMotor.setControl(new MotionMagicVoltage(setpoint));
+    //_intakeDeployMotor.setControl(new MotionMagicVoltage(setpoint));
     targetPosition = setpoint;
   }
 
