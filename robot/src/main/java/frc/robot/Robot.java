@@ -11,8 +11,10 @@ import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import edu.wpi.first.wpilibj2.command.button.CommandJoystick;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.controls.driveController;
+import frc.robot.subsystems.FeederSubsystem;
 import frc.robot.subsystems.FrontConveyanceSubsystem;
 import frc.robot.subsystems.IntakeSubsystem;
+import frc.robot.subsystems.ShooterSubsystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
@@ -24,7 +26,9 @@ public class Robot extends TimedRobot {
   private Command m_autonomousCommand;
   CommandXboxController _driveController = new CommandXboxController(0);
   public static FrontConveyanceSubsystem _frontConveyanceSubsystem = new FrontConveyanceSubsystem();
-  IntakeSubsystem _IntakeSubsystem = new IntakeSubsystem();
+  public static ShooterSubsystem _shooterSubsystem = new ShooterSubsystem();
+  public static IntakeSubsystem _intakeSubsystem = new IntakeSubsystem();
+  public static FeederSubsystem _feederSubsystem = new FeederSubsystem();
   public static final CommandXboxController COMMAND_DRIVE_CONTROLLER = new CommandXboxController(RobotMap.DRIVE_CONTROLLER_PORT);
 
   private RobotContainer m_robotContainer;
